@@ -7,7 +7,26 @@ import Directors from "./Directors";
 import Movies from "./Movies";
 
 function App() {
-  return <div>{/*{code here}*/}</div>;
+  return <div>{/*{code here}*/}
+  <NavBar />
+
+     
+<Route to="/actors">
+<Actors/>
+</Route>
+  <Route to="/directors">
+<Directors/>
+</Route>
+    <Route to="/movies">
+  <Movies/>
+  </Route>
+ 
+<Route to="/">
+  <Home/>
+  </Route>
+
+  
+  </div>;
 }
 
 export default App;
