@@ -10,20 +10,21 @@ function App() {
   return <div>{/*{code here}*/}
   <NavBar />
 
+<Route  exact path="/">
+  <Home/>
+  </Route>
      
-<Route to="/actors">
+<Route exact path="/actors" >
 <Actors/>
 </Route>
-  <Route to="/directors">
+  <Route exact path="/directors">
 <Directors/>
 </Route>
-    <Route to="/movies">
+    <Route  exact path="/movies">
   <Movies/>
   </Route>
  
-<Route to="/">
-  <Home/>
-  </Route>
+
 
   
   </div>;
